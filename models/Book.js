@@ -13,7 +13,7 @@ Book.init(
     },
     title: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       unique: true,
     },
     author: {
@@ -21,10 +21,16 @@ Book.init(
     },
     genre: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
   },
-  { sequelize, underscored: true, modelName: "book" }
+  {
+    sequelize,
+    timestamps: false,
+    freezeTableName: true,
+    underscored: true,
+    modelName: "book",
+  }
 );
 
 module.exports = Book;

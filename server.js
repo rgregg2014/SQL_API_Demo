@@ -10,10 +10,11 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 //MIDDLEWARE
-app.use(routes);
+// app.use(routes);
 app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(routes);
 
 //HTML ROUTES
 app.get("/", (req, res) => res.sendFile(path.join(__dirname, "/public/")));
