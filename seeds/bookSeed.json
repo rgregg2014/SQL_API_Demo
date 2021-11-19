@@ -3,5 +3,35 @@
     "title": "The Color of Law",
     "author": "Richard Rothstein",
     "genre": "Political Theory"
+  },
+  {
+    "title": "The Handmaid's Tale",
+    "author": "Margaret Atwood",
+    "genre": "Fiction"
+  },
+  {
+    "title": "To Save Everything, Click Here",
+    "author": "Evgeny Morozov",
+    "genre": "Ethics"
+  },
+  {
+    "title": "Ada, or Ardor",
+    "author": "Vladimir Nabokov",
+    "genre": "Fiction"
+  },
+  {
+    "title": "The Fellowship of the Ring",
+    "author": "JRR Tolkein",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "IT",
+    "author": "Stephen King",
+    "genre": "Horror"
+  },
+  {
+    "title": "Smoke Gets In Your Eyes",
+    "author": "Caitlin Doughty",
+    "genre": "Memoir"
   }
 ]
