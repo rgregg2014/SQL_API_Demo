@@ -12,18 +12,19 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 //MIDDLEWARE
+//  set Handlebars.js as front-end engine
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
+//  use a static "public" folder for css, some js
 app.use(express.static(path.join(__dirname, "public")));
 
+//  use json and url encoded to handle data from the api
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(require("./controllers"));
-//app.use(routes);
 
-//HTML ROUTES- to be replaced with express-handlebars on the front end
-//app.get("/", (req, res) => res.sendFile(path.join(__dirname, "/public/")));
+//  use "controllers" folder for routes
+app.use(require("./controllers"));
 
 //START SERVER
 sequelize.sync().then(() => {
