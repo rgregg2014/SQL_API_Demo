@@ -1,4 +1,21 @@
 * {
   box-sizing: border-box;
   border: 1px solid red;
+  background-color: whitesmoke;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montagu Slab", serif;
+  font-weight: 600;
+}
+
+p,
+a {
+  font-family: "Montagu Slab", serif;
+  font-weight: 400;
 }
